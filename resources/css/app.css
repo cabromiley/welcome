@@ -60,3 +60,39 @@
  * @import "utilities/background-patterns";
  * @import "utilities/skew-transforms";
  */
+
+.navigation {
+    @apply flex items-center justify-between pb-2 border-b border-gray-400 px-4;
+}
+
+.navigation__block {
+    @apply block mt-2 text-gray-700;
+}
+
+.navigation__logo {
+    @apply text-gray-700 text-xl font-semibold;
+}
+
+.navigation__marker::after {
+    @apply inline-block border-r border-gray-400 h-4 align-middle mx-2;
+    content: '';
+}
+
+.sm\:navigation__marker::after {
+    content: '';
+}
+
+@screen sm {
+    .sm\:navigation__marker::after {
+        @apply inline-block border-r border-gray-400 h-4 align-middle mx-2;
+    }
+}
+
+
+.navigation__link {
+    @apply cursor-pointer;
+}
+
+.navigation__link:hover {
+    @apply text-purple-600;
+}

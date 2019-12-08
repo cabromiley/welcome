@@ -15,6 +15,7 @@
         @stack('css')
     </head>
     <body @yield('body-attr')>
+        @include('layout.navigation')
         @yield('body')
 
         @stack('js')

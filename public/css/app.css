@@ -11461,6 +11461,67 @@ video {
  * @import "utilities/skew-transforms";
  */
 
+.navigation {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 0.5rem;
+  border-bottom-width: 1px;
+  border-color: #cbd5e0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navigation__block {
+  display: block;
+  margin-top: 0.5rem;
+  color: #4a5568;
+}
+
+.navigation__logo {
+  color: #4a5568;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.navigation__marker::after {
+  display: inline-block;
+  border-right-width: 1px;
+  border-color: #cbd5e0;
+  height: 1rem;
+  vertical-align: middle;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  content: '';
+}
+
+.sm\:navigation__marker::after {
+  content: '';
+}
+
+@media (min-width: 640px) {
+  .sm\:navigation__marker::after {
+    display: inline-block;
+    border-right-width: 1px;
+    border-color: #cbd5e0;
+    height: 1rem;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.navigation__link {
+  cursor: pointer;
+}
+
+.navigation__link:hover {
+  color: #805ad5;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
