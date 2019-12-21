@@ -3,13 +3,11 @@
 @section('body-attr', 'class="bg-gray-100 h-screen antialiased leading-none"')
 
 @section('body')
-    <div class="min-h-screen flex items-center justify-center">
-        <div class="flex flex-col justify-around h-full">
-            <div>
-                <h1 class="text-gray-600 text-center font-light tracking-wider text-5xl mb-6">
-                    {{ config('app.name', 'Laravel') }}
-                </h1>
-            </div>
-        </div>
-    </div>
+@include('components.hero', [
+'image' => asset('img/me.jpg'),
+'alt' => 'Me',
+'title' => 'Curtis Bromiley',
+'subtitle' => 'Web Developer',
+'skills' => [ 'PHP', 'JS', 'Laravel', 'Vue.js', 'Tailwind', 'Sass' ]
+])
 @endsection

@@ -11522,6 +11522,54 @@ video {
   color: #805ad5;
 }
 
+.hero {
+  display: -webkit-box;
+  display: flex;
+  height: 16rem;
+}
+
+.hero img {
+  width: 50%;
+}
+
+.hero__image {
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  width: 33.333333%;
+}
+
+.hero__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.tags {
+  display: -webkit-box;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.tags__item {
+  background-color: #805ad5;
+  padding: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 0.5rem;
+  line-height: 1;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  color: #fff;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
