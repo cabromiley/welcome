@@ -3,6 +3,7 @@
 @section('body-attr', 'class="bg-gray-100 h-screen antialiased leading-none"')
 
 @section('body')
+
 @include('components.hero', [
 'image' => asset('img/me.jpg'),
 'alt' => 'Me',
@@ -10,4 +11,8 @@
 'subtitle' => 'Web Developer',
 'skills' => [ 'PHP', 'JS', 'Laravel', 'Vue.js', 'Tailwind', 'Sass' ]
 ])
+
+@include('sections.experience')
+@include('sections.skills')
+
 @endsection
